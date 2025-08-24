@@ -14,9 +14,9 @@ from datetime import datetime
 import json
 
 # Configuration
-USERNAME =       
-PASSWORD =  
-RESUME_PATH = 
+USERNAME = input("Enter user mail:")      
+PASSWORD = input("Enter password:") 
+RESUME_PATH = input("Enter resume path:")
 JOB_KEYWORDS = ["data analyst", "data science", "python developer"]  
 MAX_JOBS_PER_KEYWORD = 25  
 LOCATION = "Hyderabad"
@@ -1438,4 +1438,5 @@ if __name__ == "__main__":
     print("-" * 60)
     
     bot = LinkedInJobBot()
+
     bot.run()
